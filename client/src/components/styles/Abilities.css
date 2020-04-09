@@ -1,0 +1,70 @@
+.ability-section {
+  width: 50vw;
+  margin: auto;
+  margin-top: 6vh;
+}
+
+.ability-section h3 {
+  text-transform: capitalize;
+}
+
+.ability-learnedby__sec {
+  width: 50vw;
+  margin: auto;
+}
+
+.ability-learnedby {
+  position: relative;
+  display: block;
+  width: 315px;
+  height: 60vh;
+  overflow-y: auto;
+  margin: 0 auto 0 0;
+  margin-top: 16px;
+}
+
+.ability-learnedby caption {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  position: sticky;
+  top: 0;
+  background-color: #a3a3a3;
+}
+
+.ability-learnedby__name {
+  text-transform: capitalize;
+  width: 50%;
+}
+
+.ability-type__container {
+  width: 50vw;
+}
+
+.ability-learnedby__type {
+  width: 65px;
+}
+
+.ability-learnedby tr:nth-child(even) {
+  background-color: #cfcfcf;
+}
+
+@media screen and (max-width: 770px) {
+  .ability-learnedby {
+    margin-top: 3vh;
+    width: 75vw;
+  }
+
+  .ability-section, .ability-learnedby__sec {
+    width: 75vw;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .ability-section, .ability-learnedby__sec, .ability-learnedby {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+    /* background-image: linear-gradient(rgb(195, 231, 255), rgb(63, 169, 255)); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.bug, .dark, .dragon, .electric, .fairy, .fighting,
+.fire, .flying, .ghost, .grass, .ground, .ice,
+.normal, .poison, .psychic, .rock, .steel, .water {
+    box-shadow: 
+      inset 2px 2px 2px 2px rgba(0, 0, 0, 0.3), 
+      2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 4px;
+    color: white;
+    text-transform: capitalize;
+    width: 75px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bug a, .dark a, .dragon a, .electric a, .fairy a, .fighting a,
+.fire a, .flying a, .ghost a, .grass a, .ground a, .ice a,
+.normal a, .poison a, .psychic a, .rock a, .steel a, .water a {
+    color: inherit;
+}
+
+.bug {
+    background-color: #8BE106;
+}
+  
+.dark {
+    background-color: #272727;
+}
+  
+.dragon {
+    background-color: #0000B1;
+}
+  
+.electric {
+    background-color: rgb(207, 214, 0);
+}
+  
+.fairy {
+    background-color: rgb(252, 59, 232);
+}
+
+.fighting {
+    background-color: brown;
+}
+  
+.fire {
+    background-color: #F57300;
+}
+  
+.flying {
+    background-color: #AAE3FE;
+}
+  
+.ghost {
+    background-color: #330047;
+}
+  
+.grass {
+    background-color: #007E33;
+}
+  
+.ground {
+    background-color: rgb(177, 124, 78);
+}
+  
+.ice {
+    background-color: #22FEF7;
+}
+  
+.normal {
+    background-color: rgb(185, 185, 185);
+}
+  
+.poison {
+    background-color: #7302B9;
+}
+  
+.psychic {
+    background-color: #D40087;
+}
+  
+.rock {
+    background-color: #5E4C1B;
+}
+  
+.steel {
+    background-color: #787878;
+}
+  
+.water {
+    background-color: #57BBF1;
+}
+
+.spinner:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 50%;
+    /* border-top: 2px solid rgb(35, 156, 255); */
+    border-top: 2px solid #555555;
+    border-right: 2px solid transparent;
+    animation: spinner 0.7s ease infinite;
+}
+  
+@keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+}

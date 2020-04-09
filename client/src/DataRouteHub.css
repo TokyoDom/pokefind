@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    width: 75%;
+    height: 90vh;
+    margin: auto;
+    grid-template-columns: .5fr 1.5fr;
+}
+
+.spin-container {
+    position: relative;
+}
+
+.filter-section {
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+.filter-section h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #a3a3a3;
+  height: 5vh;
+  line-height: 5vh;
+}
+
+.filter-section a {
+  text-align: center;
+}
+
+.home-section {
+  margin: auto;
+  text-align: center;
+}
+
+.home-pic {
+  height: 25vh;
+}
+
+@keyframes stat-load {
+    from {width: 0;}
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: center;
+    }
+}

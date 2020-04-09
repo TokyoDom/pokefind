@@ -1,0 +1,104 @@
+.type-section {
+  width: 50vw;
+  margin: auto;
+  margin-top: 6vh;
+}
+
+.type-card h3 {
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.type-card hr {
+  width: 100%;
+}
+
+.type-card h4 {
+  margin: 0;
+  margin-top: 16px;
+}
+
+.atk-def {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.attacking {
+  grid-column-start: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.defending {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pokesOfType__sec {
+  width: 50vw;
+  margin: auto;
+}
+
+.pokesOfType {
+  position: relative;
+  display: block;
+  width: 315px;
+  height: 60vh;
+  overflow-y: auto;
+  margin: 0 auto 0 0;
+  margin-top: 16px;
+}
+
+.pokesOfType caption {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  position: sticky;
+  top: 0;
+  background-color: #a3a3a3;
+}
+
+.pokesOfType__name {
+  text-transform: capitalize;
+  width: 50%;
+}
+
+.pokesOfType-type__container {
+  width: 50vw;
+}
+
+.pokesOfType__type {
+  width: 65px;
+}
+
+.pokesOfType tr:nth-child(even) {
+  background-color: #cfcfcf;
+}
+
+@media screen and (max-width: 770px) {
+  .atk-def, .attacking, .defending {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .type-section, .pokesOfType__sec {
+    width: 75vw;
+    margin: auto;
+  }
+
+  .pokesOfType {
+    margin-top: 3vh;
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .type-section, .pokesOfType__sec, .pokesOfType {
+    width: 100vw;
+  }
+}
